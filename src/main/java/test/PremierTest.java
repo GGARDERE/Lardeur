@@ -30,7 +30,7 @@ public class PremierTest extends AbstractTest{
 		System.out.println("Choix langue Francais");
 		homePage.changementLague(langue);
 		Thread.sleep(2000);
-//		homePage.navAccepted();
+		homePage.navAccepted();
 		Thread.sleep(2000);
 		homePage.cookiesAccepted();
 		System.out.println("Recherche Lardeur");

@@ -17,7 +17,7 @@ public class PageEquipement extends AbstractPage{
 	
 	public List<String> recupStatObjet() {
 		List<WebElement> toto =   driver.findElements(By.xpath("//div[@class='text']//div[@data-visible]//span"));
-		List<String> listCaracteristiqueObjet = new ArrayList<>();
+		List<String> listCaracteristiqueObjet = new ArrayList<String>();
 		toto.stream().map(WebElement::getText).forEach(listCaracteristiqueObjet::add);
 		return listCaracteristiqueObjet;
 	}

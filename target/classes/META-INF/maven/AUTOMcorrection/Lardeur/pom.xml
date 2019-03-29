@@ -3,6 +3,13 @@
   <groupId>AUTOMcorrection</groupId>
   <artifactId>Lardeur</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.plugin>3.1</maven.compiler.plugin>
+     <maven.compiler.target>1.8</maven.compiler.target>
+     <maven.compiler.source>1.8</maven.compiler.source>
+</properties>
   <dependencies>
   	<dependency>
     	<groupId>org.seleniumhq.selenium</groupId>
@@ -13,7 +20,18 @@
     	<groupId>junit</groupId>
     	<artifactId>junit</artifactId>
     	<version>4.11</version>
-    	<scope>test</scope>
   	</dependency>  
   </dependencies>
+      <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
