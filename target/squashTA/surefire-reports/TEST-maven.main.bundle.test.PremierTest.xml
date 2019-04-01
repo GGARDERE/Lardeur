@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="55.402" failures="0" tests="1" name="maven.main.bundle.test.PremierTest" >
+  <testcase time="55.392" classname="maven.main.bundle.test.PremierTest" name="test.PremierTest.run" />
+</testsuite>
